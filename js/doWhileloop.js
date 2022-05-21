@@ -1,6 +1,6 @@
 // do {
-//     code excauted
-// }while(true)
+//     code excauted (statement)
+// }while(true | condition)
 
 //do while code always runs either condition is false
 

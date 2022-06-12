@@ -1,6 +1,11 @@
 //object inside array
 //very useful in real application
 
+//object doesnt have skip option to skip an key but we can access any key by name
+//example
+
+const obj1 = {}
+
 const users = [
     {
         id : 1,

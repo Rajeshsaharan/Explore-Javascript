@@ -34,3 +34,19 @@ function iseven(number){
         return false
     }
 }
+
+//whenever function return something function stopped excuating further
+
+//a BASIC function
+
+function check_array(arr, tar){
+    for (let i = 0; i<arr.length;i++){
+        if (arr[i]===tar){
+            return i
+        }
+    }
+    return -1
+}
+
+check_array([1,2,3.4], 4) //gives index no of tar argu
+check_array([1,2,3,4], 5) //gives -1 

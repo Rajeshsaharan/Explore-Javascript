@@ -1,4 +1,4 @@
-//function
+//function declartaion
 
 function myfunc(){
     //function work

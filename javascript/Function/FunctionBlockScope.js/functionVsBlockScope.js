@@ -1,4 +1,4 @@
-.//first read file variables/variablesKeywords.js ----> IMPORTANT
+//first read file variables/variablesKeywords.js ----> IMPORTANT
 //block scope or function scope
 
 //let or const are block scope
@@ -18,6 +18,8 @@
 
 
 console.log(lastName) // var can be access fro outside block & reassigned & redeclared
+
+
 
 
 

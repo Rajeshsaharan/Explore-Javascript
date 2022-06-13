@@ -7,6 +7,7 @@
 // { } ----> block
 //& whole document or .js file is also a block
 
+
 {
     let firstName = "rajesh"
     var lastName = "saharan"
@@ -17,7 +18,7 @@
 }
 
 
-console.log(lastName) // var can be access fro outside block & reassigned & redeclared
+console.log(lastName)   // var can be access fro outside block & reassigned & redeclared
 
 
 

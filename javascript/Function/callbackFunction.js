@@ -1,4 +1,4 @@
-//callback function
+//callback function --> taking a function as para 
 
 function func1(){
     console.log("hello world")

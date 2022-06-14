@@ -12,3 +12,5 @@ const ans = myfunc() // myfunc function return a function will be store in ans v
 // ans variable will be a function we can call that
 
 ans() //output -----> "hello world"
+
+

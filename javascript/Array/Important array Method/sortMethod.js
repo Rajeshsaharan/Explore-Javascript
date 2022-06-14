@@ -52,13 +52,13 @@ const products = [
 
 // //change original array 
 
-// products.sort((a,b)=> a-b) //change original array of products
+// products.sort((a,b)=> a.price-b.price) //change original array of products
 // //  not recommnded
 
 
 //create new array to low to high
-const ascendingSortNewProduct = [...products].sort((a,b)=>a-b) 
+const ascendingSortNewProduct = [...products].sort((a,b)=>a.price-b.price) 
 
 //create new array to high to low
 
-const descendingSortNewProduct = [...products].sort((a,b)=> b-a)
+const descendingSortNewProduct = [...products].sort((a,b)=> b.price-a.price)

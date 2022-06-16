@@ -14,6 +14,16 @@ const person = {
 
 console.log(person) //
 
+
+// for in loops on keys
+
+for (let key in person){
+    console.log(key)
+}
+
+//for of loop can not applied to object
+//object is not iterable
+
 //how to access data from object
 
 console.log(person.name) //output ----> rajesh 

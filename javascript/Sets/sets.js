@@ -25,3 +25,15 @@ userNames.add(["item1", "item2"]) //added
 userNames.add(["item1", "item2"]) // added because both array have diffrent memory in js engine
 userNames.add(numbers1) //added
 userNames.add(numbers1) //not added
+
+// to check items 
+
+userNames.has('rajesh') //true
+
+
+//for loop on sets
+
+for (let userName of userNames){
+    console.log(userName)
+}
+

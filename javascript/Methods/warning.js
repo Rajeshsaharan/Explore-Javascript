@@ -12,6 +12,11 @@ const user1 = {
 
 
 ////mistake & warning
+const myfunc0 = user1.about() //this value will be same as object because we called it 
+console.log(myfunc) // undefined beacuse we retuned nothing if we return something myfunc0 will store it
+
+
+
 
 const myfunc = user1.about  // 
 myfunc() //expected output ----> rajesh, 9

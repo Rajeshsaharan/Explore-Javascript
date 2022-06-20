@@ -1,5 +1,5 @@
 // call apply & bind methods
-
+//call apply bind methods are used to set value of "this" keyword 
 const user1 = {
     firstName : "rajesh",
     gender : "male",

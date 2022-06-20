@@ -7,6 +7,14 @@ const user = {
     }
 }
 
+//alternative can be written as arrow function or dierct
+
+const testObj = {
+    myfunc(){
+        console.log(this)  /// testObj
+    }
+}
+
 user.about() // "hello world"
 
 

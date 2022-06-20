@@ -1,5 +1,5 @@
 //'this' keyword expressed  whanever function/method is called
-
+// read first Method/callApplyBind.js first
 
 const user1 = {
     firstName : "rajesh",
@@ -20,8 +20,11 @@ myfunc() //expected output ----> rajesh, 9
 
 //this will be "window" object here
 
-//but bind method can bind outside function to bind to object
+//but bind method can bind outside function to bind to object ---return a function
 
 const myfunc2 = user1.about.bind(user1)
 
 myfunc2() // output ----> rajesh, 9
+
+
+

@@ -22,3 +22,6 @@ const user1 = new createUser("rajesh", 25, "brt")
 console.log(user1.__Proto__) //output -----> createUser.prototype
 
 
+//CONVENTION 
+
+//IF A FUNCTION IS CALLED WHENEVER WE USE NEW KEYWORD WE SHOULD USE FIRST LETTER CAPITAL

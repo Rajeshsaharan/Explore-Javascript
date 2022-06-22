@@ -68,3 +68,22 @@ console.log(User3)
 
 User3.bio()
 
+//after this line please first read __proto__.js file to understand better
+
+//we defined an object that contain an Methods that can be used to create an object using function
+
+function createObject2(firstName, age, course){
+    const newObj = Object.create(userMethods) // now we can added userMethods obj proto in newObj object
+    newObj.firstName = firstName
+    newObj.age = age
+    newObj.course = course
+    // newObj.about = userMethods.about
+    // newObj.bio = userMethods.bio
+    return  newObj
+
+}
+
+const user4 = createObject2("rahul", 29, 'bot')
+
+console.log(user4) 
+console.log(user4.__proto__) // proto store userMethods object

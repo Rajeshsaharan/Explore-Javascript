@@ -40,3 +40,31 @@ user2.bio()
 user2.about()
 
 
+// new way to save memory & improve pro.
+
+const userMethods = {
+    about : function(){
+        console.log(this.firstName, this.age)
+    },
+    bio : function(){
+        console.log(this.firstName, this.course)
+    }
+}
+
+function createObject(firstName, age, course){
+    userObj = {}
+    userObj.firstName = firstName
+    userObj.age = age
+    userObj.course = course
+    userObj.about = userMethods.about
+    userObj.bio = userMethods.bio
+    return userObj
+    
+}
+
+const User3 = createObject("amit", 19, "bmlt")
+
+console.log(User3)
+
+User3.bio()
+

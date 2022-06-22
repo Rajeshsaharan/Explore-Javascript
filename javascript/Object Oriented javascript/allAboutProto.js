@@ -10,3 +10,5 @@ const list = new Array(1,2,3)
 console.log(list.__proto__)
 
 console.log(Array.prototype)
+
+//Array.prototype is an array  

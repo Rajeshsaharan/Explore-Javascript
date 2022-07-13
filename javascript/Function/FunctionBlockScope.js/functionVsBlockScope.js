@@ -12,7 +12,7 @@
     let firstName = "rajesh"
     var lastName = "saharan"
     const age = 23
-    console.log(firstName) //access from block & reassigned but redeclared in same 
+    console.log(firstName) //access from block & reassigned but cant redeclared in same 
     //block scope
     console.log(age) //access from block & cant reassigned & redeclared in same block scope
 }

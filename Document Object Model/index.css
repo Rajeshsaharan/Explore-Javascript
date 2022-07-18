@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+.btn{
+    color: red
+}
 
 .bg-dark{
     background-color: black;

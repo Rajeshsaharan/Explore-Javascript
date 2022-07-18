@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* //utility class // */
+.vis{
+    display: none;
+}
+
+
+.search{
+    width: 200px;
+    animation: anim 4s;
+
+}
+
+@keyframes anim {
+    0%{
+        width: 50px;
+    }
+    50%{
+        width : 100px
+    }
+    75%{
+        width: 150px
+    }
+    100%{
+        width : 200px
+    }
+}
+
+.btn{
+    background-color: #607bfc;
+    color: #182129;
+    border: none;
+    font-size: 20px;
+    padding: 1rem, 2rem;
+    margin: 1rem, 2rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+  
+}
+
+/* utility class end */
+body{
+    background-color: #182129;
+    color: #f1f5f8;
+    font-family: 'League Mono', sans-serif;
+                                                
+}
+.main-heading{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.center{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+input[type="text"]{
+    height: 50px;
+    font-size: 20px;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+}

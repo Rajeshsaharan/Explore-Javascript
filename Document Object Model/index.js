@@ -23,11 +23,11 @@ var1.setAttribute("placeholder", "new-attr-added-by-me")
 
 const TaskList = document.getElementsByClassName("task")
 
-console.log(TaskList) //htmlcollection -- array like object
+console.log(TaskList) //htmlcollection -- array like object (live list ---Important )
 
 const TaskList2 = document.querySelectorAll(".task")
 
-console.log(TaskList2)// nodelist --- array like obejct 
+console.log(TaskList2)// nodelist --- array like obejct (static list----Important)
 
 ///htmlcollection can use only for-of or simple for loop can used
 //htmlcollection cant use forEach method 
@@ -109,3 +109,5 @@ ul.after(newtask)
 //remove an element
 newtask.remove()
 
+//how to get dimension of an element---> width height etc.
+console.log(ul.getBoundingClientRect())

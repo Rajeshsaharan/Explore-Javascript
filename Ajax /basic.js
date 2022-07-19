@@ -94,10 +94,21 @@ dataFetch("GET", URL) //return Promise
 
     fetch(URL) // return  a promise
             .then((resolvedData)=>{
-                console.log(resolvedData) // gives us an object
-                return resolvedData.json() // return a promise with resolvedData.json() so we can use .then() further
+                if(resolvedData.ok = true){
+                    console.log(resolvedData) // gives us an object
+                    return resolvedData.json() // return a promise with resolvedData.json() so we can use .then() further
+                }else
+                {
+                    throw new Error(" something went wrong") // because fetch will always resolve promise untill network error detcted
+                }
+ 
             })
             .then((resolvedDataByJson)=>{
                 console.log(resolvedDataByJson) //now give us on object of javascript
                 //if we didnt return something here this .then will return undefined with instant resolves
             })
+            .catch((error)=>{
+                console.log(error)
+            })
+            
+            //fetch() only throw an error when network is distrub so we can manually set

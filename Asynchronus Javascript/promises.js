@@ -138,4 +138,46 @@ myPromise3()
             })
 
 
-///
+/// promisify callback // ---using promise Chaining watch promiseChain.js Important
+
+
+function changeColor2(element, color){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            if(element){
+                element.style.color = color
+                resolve("success")   //resolvedData  
+            }else{
+                reject("rejected") //rejectedData
+            }
+        }, 3000)
+    })
+}
+
+changeColor2(heading1, "green").then((resolveData)=>{
+    console.log(`heading1 color changed ${resolveData}` )
+    return changeColor2(heading2, "blue")
+
+})
+    .then((resolveData)=>{
+        console.log(`heading2 color changed ${resolveData}` )
+        return changeColor2(heading3, "red")
+
+    })
+    .then((resolveData)=>{
+        console.log(`heading3 color changed ${resolveData}` )
+        return changeColor2(heading4, "orange")
+
+    })
+    .then((resolveData)=>{
+        console.log(`heading4 color changed ${resolveData}` )
+        return changeColor2(heading5, "purple")
+
+    })
+    .then((resolveData)=>{
+        console.log(`heading5 color changed ${resolveData}` )
+        return changeColor2(heading6, "#235FET")
+
+    }, (rejectedData)=>{ //becasue we know heading6 doestn exist
+        console.log(rejectedData)
+    })

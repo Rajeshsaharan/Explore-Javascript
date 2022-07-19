@@ -93,9 +93,9 @@ function myPromise2(){
     const value = true;
     return new Promise((resolve, reject)=>{
         if(value){
-            resolve("resolved data")
+            resolve("resolved data") //resolvedData
         }else{
-            reject("rejected data")
+            reject("rejected data") //rejectedData
         }
     })
 }
@@ -120,9 +120,9 @@ function myPromise3(){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
             if(value){
-                resolve("resolved Data")
+                resolve("resolved Data") //resolveData
             }else{
-                reject(" rejected data")
+                reject(" rejected data") //rejectedData
             }
         }, 3000) // 3second after setTime oute resolve or reject
     })

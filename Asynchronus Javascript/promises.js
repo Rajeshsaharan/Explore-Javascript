@@ -148,7 +148,7 @@ function changeColor2(element, color){
                 element.style.color = color
                 resolve("success")   //resolvedData  
             }else{
-                reject("rejected") //rejectedData
+                reject(`${element} not found`) //rejectedData
             }
         }, 3000)
     })
@@ -178,6 +178,13 @@ changeColor2(heading1, "green").then((resolveData)=>{
         console.log(`heading5 color changed ${resolveData}` )
         return changeColor2(heading6, "#235FET")
 
-    }, (rejectedData)=>{ //becasue we know heading6 doestn exist
-        console.log(rejectedData)
+    },)
+    .catch((rejectedData)=>{
+        alert(rejectedData)
     })
+
+    //. then() return a promise instantly with undefined value untill we manually return from it
+    // when .catch() start next .then will be stopped
+    // you must return a new promise by then method to create a succesful resolved chain
+
+    

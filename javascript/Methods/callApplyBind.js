@@ -37,3 +37,4 @@ outsideFunc.apply(user1, ["brt", 123]); //call & apply both are same but apply p
 const newfunc = outsideFunc.bind(user1, "brt", 123);
 
 newfunc(); //can be called further
+

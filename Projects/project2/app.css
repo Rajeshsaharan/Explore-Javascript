@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+/* utility class */
+
+.form-items{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.items{
+    margin : 1rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+
+/* utility class */
+
+main{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    border: 1px solid red;
+    /* height: 100%; */
+    color: white;
+}
+.user{
+    border: 1px solid red;
+    background-color: #005580;
+    height: 100%;
+    width: 50%;
+}
+
+.server{
+    border: 1px solid red;
+    background-color: #3f3f3f;
+    height: 100%;
+    width: 50%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 1.5rem;
+}
